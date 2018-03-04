@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 2963b4d7cf2351a41a474162859ba347
+timeCreated: 1520139349
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Box002_v_001
+    100002: Box002_v_002
+    100004: Box002_v_003
+    100006: Box002_v_004
+    100008: Box002_v_005
+    100010: Box002_v_006
+    100012: Box002_v_007
+    100014: Box002_v_008
+    100016: Box002_v_009
+    100018: Box002_v_010
+    100020: //RootNode
+    100022: metal001_v_001
+    100024: metal001_v_002
+    100026: metal001_v_003
+    100028: metal001_v_004
+    100030: metal001_v_005
+    100032: metal001_v_006
+    100034: metal001_v_007
+    100036: metal001_v_008
+    100038: metal001_v_009
+    100040: metal001_v_010
+    100042: metal001_v_011
+    100044: metal001_v_012
+    400000: Box002_v_001
+    400002: Box002_v_002
+    400004: Box002_v_003
+    400006: Box002_v_004
+    400008: Box002_v_005
+    400010: Box002_v_006
+    400012: Box002_v_007
+    400014: Box002_v_008
+    400016: Box002_v_009
+    400018: Box002_v_010
+    400020: //RootNode
+    400022: metal001_v_001
+    400024: metal001_v_002
+    400026: metal001_v_003
+    400028: metal001_v_004
+    400030: metal001_v_005
+    400032: metal001_v_006
+    400034: metal001_v_007
+    400036: metal001_v_008
+    400038: metal001_v_009
+    400040: metal001_v_010
+    400042: metal001_v_011
+    400044: metal001_v_012
+    2100000: No Name
+    2300000: Box002_v_001
+    2300002: Box002_v_002
+    2300004: Box002_v_003
+    2300006: Box002_v_004
+    2300008: Box002_v_005
+    2300010: Box002_v_006
+    2300012: Box002_v_007
+    2300014: Box002_v_008
+    2300016: Box002_v_009
+    2300018: Box002_v_010
+    2300020: metal001_v_001
+    2300022: metal001_v_002
+    2300024: metal001_v_003
+    2300026: metal001_v_004
+    2300028: metal001_v_005
+    2300030: metal001_v_006
+    2300032: metal001_v_007
+    2300034: metal001_v_008
+    2300036: metal001_v_009
+    2300038: metal001_v_010
+    2300040: metal001_v_011
+    2300042: metal001_v_012
+    3300000: Box002_v_001
+    3300002: Box002_v_002
+    3300004: Box002_v_003
+    3300006: Box002_v_004
+    3300008: Box002_v_005
+    3300010: Box002_v_006
+    3300012: Box002_v_007
+    3300014: Box002_v_008
+    3300016: Box002_v_009
+    3300018: Box002_v_010
+    3300020: metal001_v_001
+    3300022: metal001_v_002
+    3300024: metal001_v_003
+    3300026: metal001_v_004
+    3300028: metal001_v_005
+    3300030: metal001_v_006
+    3300032: metal001_v_007
+    3300034: metal001_v_008
+    3300036: metal001_v_009
+    3300038: metal001_v_010
+    3300040: metal001_v_011
+    3300042: metal001_v_012
+    4300000: metal001_v_001
+    4300002: metal001_v_002
+    4300004: metal001_v_003
+    4300006: metal001_v_004
+    4300008: metal001_v_005
+    4300010: metal001_v_006
+    4300012: metal001_v_007
+    4300014: metal001_v_008
+    4300016: metal001_v_009
+    4300018: metal001_v_010
+    4300020: metal001_v_011
+    4300022: metal001_v_012
+    4300024: Box002_v_001
+    4300026: Box002_v_002
+    4300028: Box002_v_003
+    4300030: Box002_v_004
+    4300032: Box002_v_005
+    4300034: Box002_v_006
+    4300036: Box002_v_007
+    4300038: Box002_v_008
+    4300040: Box002_v_009
+    4300042: Box002_v_010
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

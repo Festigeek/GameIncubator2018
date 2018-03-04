@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1353162493868896}
+  m_IsPrefabParent: 1
+--- !u!1 &1353162493868896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4527959372482990}
+  - component: {fileID: 114135292877345872}
+  - component: {fileID: 114149515250631206}
+  m_Layer: 0
+  m_Name: AsteroidBelt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4527959372482990
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1353162493868896}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0111771, y: 0.121777244, z: -1.7601509}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114135292877345872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1353162493868896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a371ca9555b8afc4bb5161b33c531265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyList:
+  - {fileID: 100000, guid: 23df32452b4f28d4984070634fd2cd1c, type: 3}
+  - {fileID: 100000, guid: 33163a4bae23f914a95ce072eed04cba, type: 3}
+  - {fileID: 100000, guid: 58cdcedcd61bbb744b832ec0efcee320, type: 3}
+  - {fileID: 100000, guid: 3426ba3af3ccc624fbd2b482197683f7, type: 3}
+  - {fileID: 100000, guid: 06f1ff56eb9e50648b6d1c1349ce7ea3, type: 3}
+  - {fileID: 100000, guid: b68e9a98f3f2b7e47b215d6194abd5c7, type: 3}
+  - {fileID: 100000, guid: 4b6573afd70404140b535cb8b6581916, type: 3}
+  - {fileID: 100000, guid: d0a8768a55771414fb4e7b14cb426680, type: 3}
+  - {fileID: 100000, guid: af749d92239d5c647a49b9cba20a3e9c, type: 3}
+  - {fileID: 100000, guid: 2a1a4938376e4a448bfd51e2a43f7bf4, type: 3}
+  beltRadius: 70
+  beltHeight: 20
+  maxSizeAsteroid: 10
+  numberAsteroids: 100
+--- !u!114 &114149515250631206
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1353162493868896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68216576a492f8d419a75495711db72b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
