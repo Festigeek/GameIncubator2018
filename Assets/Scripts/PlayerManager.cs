@@ -10,8 +10,6 @@ public class PlayerManager : MonoBehaviour
     public int playerId;
     public uint prefabIndex;
 
-    private PlayerMovement movement;
-    private PlayerController controller;
     private LifeBar lifeBar;
 
     void Start() {
@@ -20,15 +18,6 @@ public class PlayerManager : MonoBehaviour
 
     public void Setup()
     {
-        // setup movement
-        movement = gameObject.GetComponent<PlayerMovement>();
-        movement.m_PlayerId = playerId;
-        movement.Setup();
-
-        // setup controller
-        controller = gameObject.GetComponent<PlayerController>();
-        controller.playerId = playerId;
-        controller.Setup();
 
         // setup lifebar
         lifeBar = gameObject.GetComponent<LifeBar>();

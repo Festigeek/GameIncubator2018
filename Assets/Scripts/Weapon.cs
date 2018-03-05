@@ -121,6 +121,6 @@ public class Weapon : MonoBehaviour
 
     private bool IsSelf(Collider other)
     {
-        return other.GetComponent<PlayerController>().playerId == GetComponent<PlayerController>().playerId;
+        return other.GetComponent<PlayerManager>().playerId == GetComponent<PlayerManager>().playerId;
     }
 }

@@ -1222,7 +1222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11aaf71e4c483b24db9f797c27aaca86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlayerId: 1
   m_Speed: 6
   m_SlowedSpeed: 4.5
   m_TurnSpeed: 1
@@ -1334,9 +1333,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86e6cd2f48d3eba45b7d485e8aa14f91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerId: 1
   weapon: {fileID: 114671144103351226}
   shield: {fileID: 114094601530542076}
+  active: 1
+  debug: 0
 --- !u!114 &114659208980697238
 MonoBehaviour:
   m_ObjectHideFlags: 1

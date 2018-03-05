@@ -69,9 +69,11 @@ public class Spawner : MonoBehaviour {
         InitiatePositions(isRandomSpawn);
         for (int k = 0; k < objectsList.Count; k++)
         {
+            //objectsList[k].GetComponent<PlayerManager>().playerId = playerNumbers[k];   // on modifie le prefab avant l'instanciation pour que les scriptes puissent récupérer dans le awake
+
             GameObject player = Instantiate(objectsList[k], spawnPoints[k], Quaternion.identity);
             player.GetComponent<PlayerManager>().playerId = playerNumbers[k];
-            player.GetComponent<PlayerController>().Setup();
+            Debug.Log("Spawning player " + playerNumbers[k]);
         }
     }
 
