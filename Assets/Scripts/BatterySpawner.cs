@@ -12,10 +12,10 @@ public class BatterySpawner : MonoBehaviour {
     public List<RandomSpawnZone> potentialBatteryLocations; // Travail avec un préfab SpawnZone
     public GameObject battery;
     private GameObject batteryInstance;
-    public float nbSecondsBeforeRespawn = 5f;
+    public float nbSecondsBeforeRespawn = 3f;
 
     void Start() {
-        print("COROORO");
+        //print("COROORO");
         SpawnBattery();
     }
 
@@ -31,7 +31,8 @@ public class BatterySpawner : MonoBehaviour {
     }
 
     public void StartRespawn() {
-        print("COROORO");
+        
+        //print("COROORO");
         StartCoroutine(RespawnBattery(nbSecondsBeforeRespawn));
     }
 

@@ -154,9 +154,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1487899692061412
+--- !u!1 &1409838991617600
 GameObject:
   m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4255529790530058}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1487899692061412
+GameObject:
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -363,7 +378,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1487899692061412}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -380,8 +395,8 @@ Transform:
   - {fileID: 4138723009576484}
   - {fileID: 4599096506185452}
   - {fileID: 4341336487424616}
-  m_Father: {fileID: 4394590116809200}
-  m_RootOrder: 1
+  m_Father: {fileID: 4255529790530058}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4138723009576484
 Transform:
@@ -409,6 +424,20 @@ Transform:
   m_Father: {fileID: 4039020162253148}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4255529790530058
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1409838991617600}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4039020162253148}
+  m_Father: {fileID: 4394590116809200}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4304902833137842
 Transform:
   m_ObjectHideFlags: 1
@@ -459,7 +488,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224941374651834664}
-  - {fileID: 4039020162253148}
+  - {fileID: 4255529790530058}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1326,16 +1355,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attacks:
   - type: 0
-    duration: 0.19
-    delay: 0
+    duration: 1.3
+    delay: 0.5
     cooldown: 0
-    damage: 20
+    damage: 40
     Bullet: {fileID: 0}
   - type: 0
     duration: 0.29
     delay: 0.1
     cooldown: 0.8
-    damage: 35
+    damage: 15
     Bullet: {fileID: 0}
 --- !u!114 &114679945440618244
 MonoBehaviour:
@@ -1433,6 +1462,7 @@ MonoBehaviour:
   battery: {fileID: 0}
   batterySpawner: {fileID: 0}
   points: 0
+  batteryOffsetY: 1.5
 --- !u!135 &135044343232812638
 SphereCollider:
   m_ObjectHideFlags: 1
