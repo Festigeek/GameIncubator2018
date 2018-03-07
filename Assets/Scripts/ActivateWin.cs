@@ -16,8 +16,9 @@ public class ActivateWin : MonoBehaviour {
         end = true;
         winText.text = "Victory !\n Player " + player.ToString() + " wins";
         menuButton.SetActive(true);
-        myButton.Select();
-        Invoke("quit", 3f);
+        menuButton.GetComponentInParent<Canvas>();
+        //myButton.Select();
+        //Invoke("quit", 3f);
     }
 
     void quit()
@@ -27,7 +28,7 @@ public class ActivateWin : MonoBehaviour {
 
     private void Update()
     {
-        if (end)
-            myButton.Select();
+        //if (end)
+        //    myButton.Select();
     }
 }

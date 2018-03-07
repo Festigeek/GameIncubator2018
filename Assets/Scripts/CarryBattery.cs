@@ -10,6 +10,7 @@ public class CarryBattery : MonoBehaviour
     public GameObject battery;
     public BatterySpawner batterySpawner;
     public int points;
+    public float batteryOffsetY = 1.5f;
 
     private bool wearing = false;
     private Animator animator;
@@ -36,11 +37,15 @@ public class CarryBattery : MonoBehaviour
         if (wearing)
         {
             movement.slowed = true;
-            battery.transform.position = transform.position + Vector3.up;
+            battery.transform.position = transform.position + Vector3.up * batteryOffsetY;
+
+            battery.GetComponent<Collider>().enabled = false;
+            /*
             if (Input.GetKey(KeyCode.R))
             {
                 wearing = false;
             }
+            */
         }
         else
         {
@@ -54,6 +59,8 @@ public class CarryBattery : MonoBehaviour
         if(!isAlive)
         {
             wearing = false;
+
+            battery.GetComponent<Collider>().enabled = true;
         }
 
         // Collect battery
@@ -75,8 +82,7 @@ public class CarryBattery : MonoBehaviour
             battery.transform.position = other.transform.position + Vector3.up;
             batterySpawner.StartRespawn();
             points += gi.scoreParCapture;
-		if (points >= gi.scoreLimit)
-            {
+		    if (points >= gi.scoreLimit) {
                 GameObject.FindGameObjectWithTag("WinCanvas").GetComponent<ActivateWin>().WinScreen(GetComponent<PlayerManager>().playerId);
             }
         }
@@ -84,7 +90,10 @@ public class CarryBattery : MonoBehaviour
 
 	public void DropBattery()
 	{
-		battery.transform.position = transform.position;
-		wearing = false;
+        if (wearing) {
+            battery.transform.position = transform.position;
+            wearing = false;
+            battery.GetComponent<Collider>().enabled = true;
+        }
 	}
 }
