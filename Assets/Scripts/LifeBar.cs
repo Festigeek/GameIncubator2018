@@ -15,7 +15,7 @@ public class LifeBar : MonoBehaviour
     public UnityEvent OnDie;
     public Slider lifeSlider;
 
-
+    private bool dead = false;
     //  private float timer=2f;
 
 
@@ -83,7 +83,7 @@ public class LifeBar : MonoBehaviour
 
         currentLife = Mathf.Max(currentLife - amount, 0);
 
-        if (currentLife == 0)
+        if (currentLife == 0 && !dead)
             IsDead();
     }
 
@@ -92,6 +92,8 @@ public class LifeBar : MonoBehaviour
     /// </summary>
     public void IsDead()
     {
+        dead = true;
+
         PlayerMovement movement = GetComponent<PlayerMovement>();
         PlayerController controller = GetComponent<PlayerController>();
 
@@ -108,6 +110,8 @@ public class LifeBar : MonoBehaviour
 
     private void Revive()
     {
+        dead = false;
+
         PlayerMovement movement = GetComponent<PlayerMovement>();
         PlayerController controller = GetComponent<PlayerController>();
 
