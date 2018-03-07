@@ -14,7 +14,10 @@ public class BouttonManager : MonoBehaviour{
 
     private void Start()
     {
-        gi = GameObject.FindGameObjectWithTag("GameInfo").GetComponent<GameInfo>();
+        gi = GameInfo.autoRef;
+        if (!gi) {
+            Debug.LogError("BouttonManager.cs: Can't find GameInfo autoref !");
+        }
     }
 
     public void Loadlvl(string newlvl)
@@ -28,6 +31,7 @@ public class BouttonManager : MonoBehaviour{
     {
         StartCoroutine(LoadAsynchron(newlvl));
     }
+
     IEnumerator LoadAsynchron(string newlvl)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(newlvl);

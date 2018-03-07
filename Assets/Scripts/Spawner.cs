@@ -27,7 +27,10 @@ public class Spawner : MonoBehaviour {
 
     private void Awake()
     {
-        gi = GameObject.FindGameObjectWithTag("GameInfo").GetComponent<GameInfo>();
+        gi = GameInfo.autoRef;
+        if (!gi) {
+            Debug.LogError("Spawner.cs: Can't find GameInfo autoref !");
+        }
         objectsList = new List<GameObject>();
         playerNumbers = new List<int>();
     }

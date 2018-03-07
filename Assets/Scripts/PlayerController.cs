@@ -65,8 +65,8 @@ public class PlayerController : MonoBehaviour
     {
         if (active)
         {
-            if (Input.GetButtonDown("Atk_P" + pm.playerId) || Input.GetAxisRaw("Atk_P" + pm.playerId) < -0.5)
-            {   // "Atk_P1"
+           // if (Input.GetButtonDown("Atk_P" + pm.playerId) || Input.GetAxisRaw("Atk_P" + pm.playerId) < -0.5)
+            if (Input.GetAxisRaw("Atk_P" + pm.playerId) < -0.5) {   // "Atk_P1"
 
                 Debug.Log("PlayerController: Attack Quick launched");
                 if (weapon.LaunchAttack(AttackPower.Quick))
@@ -76,7 +76,8 @@ public class PlayerController : MonoBehaviour
                     audioController.audioQuickAttack.Play();
                 }
             }
-            if (Input.GetButtonDown("Atk_P" + pm.playerId) || Input.GetAxisRaw("Atk_P" + pm.playerId) > 0.5)
+            //if (Input.GetButtonDown("Atk_P" + pm.playerId) || Input.GetAxisRaw("Atk_P" + pm.playerId) > 0.5)
+            if (Input.GetAxisRaw("Atk_P" + pm.playerId) > 0.5)
             {   // "Atk_P"
                 if (weapon.LaunchAttack(AttackPower.Long))
                 {
