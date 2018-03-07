@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.030745171, g: 0.022347199, b: 0.018823247, a: 1}
+  m_IndirectSpecularColor: {r: 0.059306264, g: 0.041995957, b: 0.03331915, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1583,54 +1583,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: b768c52ca10879642bea0c5b1ed71b5f, type: 3}
---- !u!1 &1446402984
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1446402986}
-  - component: {fileID: 1446402985}
-  m_Layer: 0
-  m_Name: GameInfo
-  m_TagString: GameInfo
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1446402985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1446402984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b199048bc8067624e8033f5b320f2d8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  p1: -1
-  p2: -1
-  p3: -1
-  p4: -1
-  listPlayerPrefabs:
-  - {fileID: 1969575905126546, guid: 2f7393bca49376945a8b3928b5ffd4ba, type: 2}
-  - {fileID: 1397193117015662, guid: 3f5187fe945747a448f207799c35949b, type: 2}
-  - {fileID: 1710869362392428, guid: 46a68e1f0121b4e46b580aad42b48cca, type: 2}
---- !u!4 &1446402986
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1446402984}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 567.31836, y: 3.9736938, z: -78.81169}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1453257753
 GameObject:
   m_ObjectHideFlags: 0
@@ -1994,7 +1946,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c487adbc9139d429faa04fee7b9049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gi: {fileID: 1446402985}
+  gameInfoPrefab: {fileID: 1849029311998712, guid: 1d70982f1ba984a41a08387517f9ae19,
+    type: 2}
   labelP1: {fileID: 1835894999}
   labelP2: {fileID: 576026113}
   labelP3: {fileID: 2019413016}

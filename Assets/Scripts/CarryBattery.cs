@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class CarryBattery : MonoBehaviour
 {
+    
     public GameObject battery;
     public BatterySpawner batterySpawner;
     public int points;
@@ -15,8 +16,15 @@ public class CarryBattery : MonoBehaviour
     private audioController audioController;
     private PlayerMovement movement;
 
+    private GameInfo gi;
+
     private void Start()
     {
+        gi = GameInfo.autoRef;
+        if (!gi) {
+            Debug.LogError("CarryBattery.cs: Script GameInfo n'a pas d'auto-référence statique !");
+        }
+
         animator = GetComponentInChildren<Animator>();
         audioController = GetComponent<audioController>();
         movement = GetComponent<PlayerMovement>();
@@ -66,8 +74,8 @@ public class CarryBattery : MonoBehaviour
             battery.GetComponent<Collider>().enabled = false;
             battery.transform.position = other.transform.position + Vector3.up;
             batterySpawner.StartRespawn();
-            points += 100;
-		if (points >= 600)
+            points += gi.scoreParCapture;
+		if (points >= gi.scoreLimit)
             {
                 GameObject.FindGameObjectWithTag("WinCanvas").GetComponent<ActivateWin>().WinScreen(GetComponent<PlayerManager>().playerId);
             }

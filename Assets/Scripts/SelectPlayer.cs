@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class SelectPlayer : MonoBehaviour {
 
-    public GameInfo gi;
+    private GameInfo gi;
+    public GameObject gameInfoPrefab;
 
     public Text labelP1;
     public Text labelP2;
@@ -25,6 +26,15 @@ public class SelectPlayer : MonoBehaviour {
     public GameObject characterPositionP3;
     public GameObject characterPositionP4;
     public GameObject[] characterMenuPrefabs;
+
+    void Awake() {
+
+        if (GameInfo.autoRef) {
+            gi = GameInfo.autoRef;
+        } else {
+            gi = Instantiate(gameInfoPrefab).GetComponent<GameInfo>();
+        }
+    }
 
     void asdsda()
     {

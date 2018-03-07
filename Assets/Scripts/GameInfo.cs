@@ -12,8 +12,14 @@ public class GameInfo : MonoBehaviour
 
     public List<GameObject> listPlayerPrefabs;
 
+    public static GameInfo autoRef;
+
+    public int scoreLimit = 500;
+    public int scoreParCapture = 100;
+
     private void Awake()
     {
+        autoRef = this;
         DontDestroyOnLoad(this.gameObject);
     }
 
