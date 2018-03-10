@@ -39,7 +39,6 @@ public class CarryBattery : MonoBehaviour
             movement.slowed = true;
             battery.transform.position = transform.position + Vector3.up * batteryOffsetY;
 
-            battery.GetComponent<Collider>().enabled = false;
             /*
             if (Input.GetKey(KeyCode.R))
             {
@@ -56,11 +55,13 @@ public class CarryBattery : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         bool isAlive = GetComponent<LifeBar>().GetIsAlive();
-        if(!isAlive)
-        {
-            wearing = false;
 
+        if(!isAlive && battery) {
+            
+            wearing = false;
             battery.GetComponent<Collider>().enabled = true;
+            battery = null;
+
         }
 
         // Collect battery
@@ -70,6 +71,7 @@ public class CarryBattery : MonoBehaviour
             animator.SetTrigger("catching");
             audioController.audioTake.Play();
             wearing = true; // TODO remove and start wearing at animation catch event
+            battery.GetComponent<Collider>().enabled = false;
         }
 
         // Put battery in chamber
@@ -80,6 +82,7 @@ public class CarryBattery : MonoBehaviour
             wearing = false;
             battery.GetComponent<Collider>().enabled = false;
             battery.transform.position = other.transform.position + Vector3.up;
+            battery = null;
             batterySpawner.StartRespawn();
             points += gi.scoreParCapture;
 		    if (points >= gi.scoreLimit) {
@@ -87,7 +90,7 @@ public class CarryBattery : MonoBehaviour
             }
         }
     }
-
+    
 	public void DropBattery()
 	{
         if (wearing) {
@@ -96,4 +99,5 @@ public class CarryBattery : MonoBehaviour
             battery.GetComponent<Collider>().enabled = true;
         }
 	}
+    
 }

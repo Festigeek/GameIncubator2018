@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.10594124, g: 0.079173036, b: 0.063617446, a: 1}
+  m_IndirectSpecularColor: {r: 0.11567845, g: 0.08654801, b: 0.06950135, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -750,7 +750,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1317785164474484, guid: 4183f2cbcaba44b4ba92fd33e64c0eb0, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114549501036592260, guid: 4183f2cbcaba44b4ba92fd33e64c0eb0,
         type: 2}
@@ -1958,7 +1958,7 @@ MonoBehaviour:
   characterPositionP3: {fileID: 405280668}
   characterPositionP4: {fileID: 1952774138}
   characterMenuPrefabs:
-  - {fileID: 1987088809658944, guid: 50939cee71f0a37438506e4cf3fca32d, type: 2}
+  - {fileID: 1969575905126546, guid: 2c907d35bb27f714897387a982603e64, type: 2}
   - {fileID: 1899761517375716, guid: bd4017d4dd460894eb17fc60b1bfa124, type: 2}
   - {fileID: 1710869362392428, guid: ad86e11732ae8fa46bb305a12a7fb9aa, type: 2}
 --- !u!114 &1753542272

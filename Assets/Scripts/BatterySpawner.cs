@@ -27,6 +27,7 @@ public class BatterySpawner : MonoBehaviour {
     /// </summary>
     public void SpawnBattery()
     {
+
         batteryInstance = Instantiate(battery, potentialBatteryLocations[Random.Range(0, potentialBatteryLocations.Count)].GetRandomPosition(), Quaternion.identity);
     }
 
@@ -38,9 +39,9 @@ public class BatterySpawner : MonoBehaviour {
 
     private IEnumerator RespawnBattery(float waitTime)
     {
-        print("STARTRESPAWN");
+        //print("STARTRESPAWN");
         yield return new WaitForSeconds(waitTime);
-        print("ASFSAFFASF");
+        //print("ASFSAFFASF");
         Destroy(batteryInstance);
         SpawnBattery();
     }
