@@ -31,6 +31,10 @@ public class SelectPlayer : MonoBehaviour {
 
         if (GameInfo.autoRef) {
             gi = GameInfo.autoRef;
+            gi.p1 = -1;
+            gi.p2 = -1;
+            gi.p3 = -1;
+            gi.p4 = -1;
         } else {
             gi = Instantiate(gameInfoPrefab).GetComponent<GameInfo>();
         }
