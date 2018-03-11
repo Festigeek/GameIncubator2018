@@ -1502,7 +1502,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1710869362392428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 1, z: 0}
+  m_LocalPosition: {x: 63.64524, y: 838.7954, z: -472.88934}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4661118234959938}
@@ -5361,12 +5361,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b28f6f060fdaa0e43a8922e391a8832f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipTake: {fileID: 8300000, guid: bfa69c212470e4341a12bd4bd802eee2, type: 3}
+  clipTake: {fileID: 8300000, guid: eacfbfdce5c861c42aa3d89d62a23397, type: 3}
   clipWin: {fileID: 8300000, guid: d22840138e6875940b66eefb69f0a328, type: 3}
   clipDeath: {fileID: 8300000, guid: 82fb1ee15fe71514a9b41ae8918f72a6, type: 3}
   clipResurect: {fileID: 8300000, guid: 8be058b804deec443b1488625986f98a, type: 3}
-  clipQuickAttack: {fileID: 8300000, guid: 61bb63c1ba1d66148a5de5b712d8ad0e, type: 3}
-  clipLongAttack: {fileID: 8300000, guid: 4b0c3b7aa2526b642ae78bffbb49ebfd, type: 3}
+  clipQuickAttack: {fileID: 8300000, guid: 37bce799d69d4dc41ab5fc4070d1386b, type: 3}
+  clipLongAttack: {fileID: 8300000, guid: db35ebadf11cb6b4f906996e3cbaeee1, type: 3}
   audioTake: {fileID: 82634677539788414}
   audioWin: {fileID: 82780186778550216}
   audioDeath: {fileID: 82273643389468916}

@@ -45,10 +45,7 @@ public class SelectPlayer : MonoBehaviour {
 
         if (!playing)
         {
-            foreach (AudioSource a in GetComponents<AudioSource>())
-            {
-                a.Play();
-            }
+            GetComponent<AudioSource>().Play();
             audio.mute = true;
             audio.Stop();
             playing = true;
