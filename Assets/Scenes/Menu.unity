@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.11567845, g: 0.08654801, b: 0.06950135, a: 1}
+  m_IndirectSpecularColor: {r: 0.047643684, g: 0.033444755, b: 0.027445259, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -750,7 +750,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1317785164474484, guid: 4183f2cbcaba44b4ba92fd33e64c0eb0, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114549501036592260, guid: 4183f2cbcaba44b4ba92fd33e64c0eb0,
         type: 2}
@@ -1459,7 +1459,6 @@ GameObject:
   - component: {fileID: 1440775901}
   - component: {fileID: 1440775900}
   - component: {fileID: 1440775899}
-  - component: {fileID: 1440775902}
   m_Layer: 5
   m_Name: PlayBoutton
   m_TagString: Untagged
@@ -1571,18 +1570,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1440775897}
---- !u!114 &1440775902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1440775897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2c17b05aabd8864bb0868be9450232c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: b768c52ca10879642bea0c5b1ed71b5f, type: 3}
 --- !u!1 &1453257753
 GameObject:
   m_ObjectHideFlags: 0
