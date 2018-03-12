@@ -8,7 +8,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public Weapon weapon;
-    public Shield shield;
+    private Shield shield;
 
     /*
     private string quickAttackCommand;
@@ -44,6 +44,11 @@ public class PlayerController : MonoBehaviour
         if (!animator)
         {
             Debug.LogError("Player Controller: Can't find audioController ");
+        }
+        shield = GetComponentInChildren<Shield>();
+
+        if (!shield) {
+            Debug.LogError("Player Controller: Can't find shield ");
         }
         /*
         quickAttackCommand = "Atk_P" + pm.playerId;

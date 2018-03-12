@@ -162,6 +162,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4255529790530058}
+  - component: {fileID: 114716546575862502}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -179,7 +180,6 @@ GameObject:
   - component: {fileID: 4039020162253148}
   - component: {fileID: 95710770521860782}
   - component: {fileID: 135044343232812638}
-  - component: {fileID: 114298511161334210}
   m_Layer: 0
   m_Name: MrEnglishV3
   m_TagString: Untagged
@@ -379,8 +379,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1487899692061412}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.6666666, z: 0}
+  m_LocalScale: {x: 3.3333347, y: 3.333333, z: 3.3333347}
   m_Children:
   - {fileID: 4882476783557750}
   - {fileID: 4981512884011312}
@@ -432,7 +432,7 @@ Transform:
   m_GameObject: {fileID: 1409838991617600}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 4039020162253148}
   m_Father: {fileID: 4394590116809200}
@@ -1183,24 +1183,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114298511161334210
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1487899692061412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc32d3140e3a64c489996767a80f17bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MAX_SHIELD_VALUE: 60
-  SHIELD_REGEN: 0.5
-  MAX_SCALE: 7
-  MIN_SCALE: 4
-  cooldown: 0.75
-  shieldPrefab: {fileID: 1312349433531198, guid: 208792b979fe77c41ac5d7061dcb9e11,
-    type: 2}
 --- !u!114 &114304877008234906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1400,6 +1382,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerId: 0
   prefabIndex: 0
+--- !u!114 &114716546575862502
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1409838991617600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc32d3140e3a64c489996767a80f17bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MAX_SHIELD_VALUE: 60
+  SHIELD_REGEN: 0.5
+  MAX_SCALE: 7
+  MIN_SCALE: 4
+  cooldown: 0.75
+  shieldPrefab: {fileID: 1312349433531198, guid: 208792b979fe77c41ac5d7061dcb9e11,
+    type: 2}
 --- !u!114 &114783277550011488
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1445,7 +1445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 114570139034075082}
-  shield: {fileID: 114298511161334210}
+  shield: {fileID: 0}
   active: 1
   debug: 0
 --- !u!114 &114961600547089072

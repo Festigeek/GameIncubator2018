@@ -40,6 +40,7 @@ public class SpawnObjectForMenu : MonoBehaviour {
             int y2 = Random.Range(-50, 50);
             int prefab2 = Random.Range(0, prefabs.Length);
             GameObject l2 = Instantiate(prefabs[prefab2], right.transform.position + new Vector3(0, x2, y2), Quaternion.identity);
+            l2.AddComponent<Rotater>();
             Destroy(l2, 20f);
             objects.Add(l2);
             directions.Add(new Vector3(Random.Range(-20, 20), Random.Range(-20, 20), Random.Range(-20, 20)));
